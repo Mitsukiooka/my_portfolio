@@ -1,0 +1,20 @@
+languages:
+  - Ruby
+  - Javascript
+  - CSS
+frameworks:
+  - Ruby On Rails
+  - jQuery
+tools: 
+  - Git Hub
+  - Slack
+englishs:
+  - test: TOEIC
+    score: 825
+    date: March 2017
+  - test: TOEFL iBT
+    score: 88
+    date: July 2019
+
+
+

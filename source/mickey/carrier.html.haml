@@ -1,23 +1,26 @@
 .header
-  %h1="Carrier"
+  %h1
+    Carrier
 .contents
   %h2="Self introduction"
   %p
 .contents
   %h2="Education"
-  %ul
-    %li="Meiji University Global Japanese Studies April 2013 to March 2017"
-    %li="Seijo High School April 2009 to December 2010"
-  %h2="Ativities"
-  %ul
-    %li="Working Holiday in Toronto TESOL certification August 2019 to June 2020"
-    %li="University of Alabama Exchange Study Abroad August 2015 to January 2016"
-    %li="University of Toronto English Learning Program August 2014"
+  -data.educations.each do |education|
+    %h3=education[:name]
+    %p=education[:period]
+    %span=education[:degree]
+    %p=education[:major]
 .contents
   %h2="Work Experiences"
-  %ul
-    %li="Info Athlete July 2020 currently working"
-    %li="Keyence Canada November 2019 to March 2020"
-    %li="San-ei Travel February 2019 to July 2019"
-    %li="Axess International Network April 2017 to December 2018"
-  
+  -data.exp_companies.each do |exp_company|
+    %h3=exp_company[:name]
+    %p=exp_company[:period]
+    %span=exp_company[:role]
+    %p=exp_company[:job]
+.contents
+  %h2="Ativities"
+  -data.activities.each do |activity|
+    %h3=activity[:name]
+    %p=activity[:period]
+    %p=activity[:content]
