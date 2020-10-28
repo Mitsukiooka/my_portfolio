@@ -26,11 +26,9 @@
       %h3
         Hobbies
       -about[:hobbies].each do |hobbie|
-        %ul
-          %li="#{hobbie.keys}: #{hobbie.values}"
-          -# -binding.pry
-    -# .img
-    -#   =image_tag '/images/profile.jpg'
+        -hobbie.to_a.each do |k, v|
+          %ul
+            %li="#{k}: #{v}"
     .text
       %h2="History"
       %p=about[:history]
@@ -38,4 +36,5 @@
       %h2="Ambition"
       %p=about[:ambition]
 
-
+      -# .img
+      -#   =image_tag '/images/profile.jpg'
