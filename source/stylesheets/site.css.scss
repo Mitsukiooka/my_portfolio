@@ -48,7 +48,7 @@ table {
 }
 
 .header {
-  width: 100%;
+  width: 20%;
   display: block;
   h1 {
   font-size: 40px;
@@ -163,12 +163,44 @@ table {
   float: right;
 }
 
+.containerCareer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/career.jpg');
+  background-size: 100%;
+  h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  h3 {
+    font-size: 25px;
+    margin: 10px;
+  }
 
-// .containerSkill .item.p{
-//   background-image: url('/images/programming_skill.jpg');
-// }
+  p{
+    font-size: 18px;
+    margin: 5px;
+  }
+}
 
-// .containerSkill .item.e{
-//   background-image: url('/images/english_skill.jpg');
+.containerCareer .contents {
+  margin: 10px;
+}
+
+.containerCareer .contents.pr {
+  width: 100%;
+
+}
+
+.containerCareer .contents.edu {
+  width: 45%;
+  display: inline-block;
+}
+
+.containerCareer .contents.wexp {
+  width: 45%;
+  display: inline-block;
+}
 
 

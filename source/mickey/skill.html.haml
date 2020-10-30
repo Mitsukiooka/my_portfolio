@@ -27,7 +27,7 @@
         =image_tag '/images/english_skill.jpg', width: '400px'
   .contents
     .item
-      %h2="My Works"
+      %h2="My Portfolio"
       -data.works.each do |work|
         %ul
           %li=link_to "#{work[:title]}", work[:url]
