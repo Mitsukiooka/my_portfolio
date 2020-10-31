@@ -3,9 +3,8 @@
     %h1
       Career
   .contents.pr
-    -about = data.abouts[0]
     %h2="Self introduction"
-    %p=about[:self_pr]
+    %p=data.abouts[0][:self_pr]
   .contents.edu
     %h2="Education"
     -data.educations.each do |education|

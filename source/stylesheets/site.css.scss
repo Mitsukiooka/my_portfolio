@@ -80,6 +80,30 @@ table {
   
 }
 
+.containerIndex {
+  width: 100%;
+  background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/toronto.jpg');
+  background-size: contain;
+  .header {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .contents ul{
+    list-style: none;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .contents li {
+    margin: 20px;
+  }
+  .info p{
+    text-align: center;
+  }
+}
+
 .containerAbout {
   display: flex;
   height: 100%;

@@ -3,38 +3,37 @@
     %h1
       About Me
   .contents
-    -about = data.abouts[0]
     .profile
       %h2
         Profile
       .item
         %h3
           Name
-        %p=about[:name]
+        %p=data.abouts[0][:name]
       .item
         %h3
           Gender
-        %p=about[:gender]
+        %p=data.abouts[0][:gender]
       .item
         %h3
           Born in
-        %p=about[:born]
+        %p=data.abouts[0][:born]
       .item
         %h3
           Based at
-        %p=about[:live]
+        %p=data.abouts[0][:live]
       %h3
         Hobbies
-      -about[:hobbies].each do |hobbie|
+      -data.abouts[0][:hobbies].each do |hobbie|
         -hobbie.to_a.each do |k, v|
           %ul
             %li="#{k}: #{v}"
     .text
       %h2="History"
-      %p=about[:history]
+      %p=data.abouts[0][:history]
     .text
       %h2="Ambition"
-      %p=about[:ambition]
+      %p=data.abouts[0][:ambition]
 
       -# .img
       -#   =image_tag '/images/profile.jpg'
