@@ -83,7 +83,7 @@ table {
 .containerIndex {
   width: 100%;
   background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/toronto.jpg');
-  background-size: contain;
+  background-size: cover;
   .header {
     width: 100%;
   }
@@ -108,55 +108,58 @@ table {
   display: flex;
   height: 100%;
   background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/toronto.jpg');
-  background-size: contain;
+  background-size: cover;
   flex-direction: column;
   padding: 20px;
 }
 
-.profile {
-  width: 50%;
-  margin: 20px;
-  display: inline-block;
-  flex-direction: row;
-  align-items: flex-start;
-  
-}
-.containerAbout .item {
+.containerAbout .contents {
+  text-align: center;
+  .profile {
+    width: 100%;
+    margin: 20px;
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .item {
   width: 33%;
   display: inline-block;
   margin-bottom: 20px;
-}
+  } 
 
-.img {
-  width: 40%;
-  display: inline-block;
-  img {
-    width: 120px;
-    height: 160px;
+  .img {
+    width: 40%;
+    display: inline-block;
+    img {
+      width: 120px;
+      height: 160px;
+    }
+  }
+
+  .text {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
   }
 }
-
-.text {
-  width: 50%;
-  margin: 20px;
-  h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-}
-
 .containerSkill {
   background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/skills.jpg');
-  background-size: 100%;
+  background-size: cover;
 }
 
 .containerSkill .contents{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .containerSkill .item{
+  width: 35%;
+  margin: 40px;
   h2 {
     margin: 10px;
   }
@@ -176,15 +179,9 @@ table {
 }
 
 .containerSkill .item .body {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   margin-right: 30px;
-}
-
-.containerSkill .item .image {
-  width: 30%;
-  display: inline-block;
-  float: right;
 }
 
 .containerCareer {
@@ -192,7 +189,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/career.jpg');
-  background-size: 100%;
+  background-size: cover;
   h2 {
     font-size: 30px;
     margin: 10px;
@@ -229,7 +226,7 @@ table {
 
 .containerContact {
   background: linear-gradient( 90deg, rgb(255, 255, 254), rgba(253, 253, 253, 0)), url('/images/contact.jpg');
-  background-size: 100%;
+  background-size: cover;
   .contact p {
     text-align: center;
     font-size: 24px;

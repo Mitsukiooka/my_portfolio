@@ -4,28 +4,23 @@
       My Skills
   .contents
     .item
-      .body
-        %h2="Web Language"
-        -data.skills.languages.each do |language|
-          %p=language
-        %h2="Framework"
-        -data.skills.frameworks.each do |framework|
-          %p=framework
-        %h2="Tools"
-        -data.skills.tools.each do |tool|
-          %p=tool
-      .image
-        =image_tag '/images/programming_skill.jpg', width: '400px'
+      %h2="Web Language"
+      -data.skills.languages.each do |language|
+        %p=language
+      %h2="Framework"
+      -data.skills.frameworks.each do |framework|
+        %p=framework
+      %h2="Tools"
+      -data.skills.tools.each do |tool|
+        %p=tool
+      =image_tag '/images/programming_skill.jpg', width: '400px'
     .item
-      .body
-        %h2="English"
-        -data.skills.englishs.each do |english|
-          %h3=english[:test]
-          %p=english[:score]
-          %p=english[:date]
-      .image
-        =image_tag '/images/english_skill.jpg', width: '400px'
-  .contents
+      %h2="English"
+      -data.skills.englishs.each do |english|
+        %h3=english[:test]
+        %p=english[:score]
+        %p=english[:date]
+      =image_tag '/images/english_skill.jpg', width: '400px'
     .item
       %h2="My Portfolio"
       -data.works.each do |work|

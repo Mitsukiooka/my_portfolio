@@ -7,3 +7,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem "sass"
 gem "middleman-sprockets"
 gem 'pry-rails'
+gem 'bootstrap-sass', :require => false
+gem 'jquery-middleman', :require => false
