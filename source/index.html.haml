@@ -3,10 +3,11 @@
     %h1
       Mitsuki Ooka
   .contents
-    %ul
-      %li=link_to "About Me", '/mickey/about.html'
-      %li=link_to "My Skills", '/mickey/skill.html'
-      %li=link_to "My career", '/mickey/career.html'
-      %li=link_to "My Contact", '/mickey/contact.html'
-  .info
-    %p=data.abouts[0][:intro]
+    .link
+      %ul
+        %li=link_to "About Me", '/mickey/about.html'
+        %li=link_to "My Skills", '/mickey/skill.html'
+        %li=link_to "My Career", '/mickey/career.html'
+        %li=link_to "My Contact", '/mickey/contact.html'
+    .info
+      %p=data.abouts[0][:intro]
