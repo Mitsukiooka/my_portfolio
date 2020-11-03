@@ -1,1 +1,3 @@
-// This is where it all goes :)
+//= require about-me
+//= require my-skill
+//= require my-career

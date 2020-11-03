@@ -3,7 +3,15 @@
     %h1
       My Skills
   .contents
-    .item
+    .item1
+      %h2="My Portfolio"
+      -data.works.each do |work|
+        %ul
+          %li=link_to "#{work[:title]}", work[:url]
+          %p=work[:description]
+      =image_tag '/images/programming_skill.jpg'
+      =image_tag '/images/english_skill.jpg'
+    .item2
       %h2="Web Language"
       -data.skills.languages.each do |language|
         %p=language
@@ -13,17 +21,10 @@
       %h2="Tools"
       -data.skills.tools.each do |tool|
         %p=tool
-      =image_tag '/images/programming_skill.jpg', width: '400px'
-    .item
+    .item2
       %h2="English"
       -data.skills.englishs.each do |english|
         %h3=english[:test]
         %p=english[:score]
         %p=english[:date]
-      =image_tag '/images/english_skill.jpg', width: '400px'
-    .item
-      %h2="My Portfolio"
-      -data.works.each do |work|
-        %ul
-          %li=link_to "#{work[:title]}", work[:url]
 =link_to "Go Back", '/index.html'
