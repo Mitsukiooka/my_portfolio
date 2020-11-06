@@ -1,26 +1,27 @@
 .containerCareer
   .header
     %h1
-      Career
-  .contents.wexp
-    %h2="Education"
-    -data.educations.each do |education|
-      %h3=education[:name]
-      %p=education[:period]
-      =education[:degree]
-      =education[:major]
-    %h2="Work Experiences"
-    -data.exp_companies.each do |exp_company|
-      %h3=exp_company[:name]
-      =exp_company[:period]
-      =exp_company[:role]
-      %p=exp_company[:job]
-  .contents.edu
-    %h2="Activities"
-    -data.activities.each do |activity|
-      %h3=activity[:name]
-      =activity[:period]
-      %p=activity[:content]
-  .contents.pr
-    %h2="Self introduction"
-    %p=data.abouts[0][:self_pr]
+      CAREER
+  .contents
+    .wexp
+      %h2="EDUCATION"
+      -data.educations.each do |education|
+        %h3=education[:name]
+        %p=education[:period]
+        =education[:degree]
+        =education[:major]
+      %h2="WORK EXPERIENCE"
+      -data.exp_companies.each do |exp_company|
+        %h3=exp_company[:name]
+        =exp_company[:period]
+        =exp_company[:role]
+        %p=exp_company[:job]
+    .edu
+      %h2="ACTIVITIES"
+      -data.activities.each do |activity|
+        %h3=activity[:name]
+        =activity[:period]
+        %p=activity[:content]
+    .pr
+      %h2="SELF PR"
+      %p=data.abouts[0][:self_pr]

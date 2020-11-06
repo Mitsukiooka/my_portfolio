@@ -1,29 +1,28 @@
 .containerSkill
   .header
     %h1
-      My Skills
+      SKILLS
   .contents
     .item1
-      %h2="My Portfolio"
+      %h2="PORTFOLIO"
       -data.works.each do |work|
         %ul
-          %li=link_to "#{work[:title]}", work[:url]
+          %li=link_to "#{work[:title]}", work[:url], class: 'btn'
           %p=work[:description]
       =image_tag '/images/programming_skill.jpg'
-      =image_tag '/images/english_skill.jpg'
     .item2
-      %h2="Web Language"
+      %h2="WEB LANGUAGE"
       -data.skills.languages.each do |language|
         %p=language
-      %h2="Framework"
+      %h2="FRAMEWORK"
       -data.skills.frameworks.each do |framework|
         %p=framework
-      %h2="Tools"
+      %h2="TOOLS"
       -data.skills.tools.each do |tool|
         %p=tool
-    .item2
-      %h2="English"
+      %h2="ENGLISH"
       -data.skills.englishs.each do |english|
         %h3=english[:test]
         %p=english[:score]
         %p=english[:date]
+      =image_tag '/images/english_skill.jpg'
