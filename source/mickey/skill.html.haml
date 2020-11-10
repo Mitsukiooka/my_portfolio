@@ -4,25 +4,28 @@
       SKILLS
   .contents
     .item1
-      %h2="PORTFOLIO"
-      -data.works.each do |work|
-        %ul
-          %li=link_to "#{work[:title]}", work[:url], class: 'btn'
-          %p=work[:description]
-      =image_tag '/images/programming_skill.jpg'
+      .text
+        %h2="PORTFOLIO"
+        -data.works.each do |work|
+          %ul
+            %li=link_to "#{work[:title]}", work[:url], class: 'btn'
+            %p=work[:description]
+        =image_tag '/images/programming_skill.jpg'
     .item2
-      %h2="WEB LANGUAGE"
-      -data.skills.languages.each do |language|
-        %p=language
-      %h2="FRAMEWORK"
-      -data.skills.frameworks.each do |framework|
-        %p=framework
-      %h2="TOOLS"
-      -data.skills.tools.each do |tool|
-        %p=tool
-      %h2="ENGLISH"
-      -data.skills.englishs.each do |english|
-        %h3=english[:test]
-        %p=english[:score]
-        %p=english[:date]
-      =image_tag '/images/english_skill.jpg'
+      .text
+        %h2="WEB LANGUAGE"
+        -data.skills.languages.each do |language|
+          %p=language
+        %h2="FRAMEWORK"
+        -data.skills.frameworks.each do |framework|
+          %p=framework
+        %h2="TOOLS"
+        -data.skills.tools.each do |tool|
+          %p=tool
+        %h2="ENGLISH"
+        -data.skills.englishs.each do |english|
+          %h3=english[:test]
+          %p=english[:score]
+          %p=english[:date]
+        =image_tag '/images/english_skill.jpg'
+        
