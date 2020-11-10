@@ -4,24 +4,22 @@
       CAREER
   .contents
     .wexp
-      %h2="EDUCATION"
+      %h2.btn="EDUCATION"
       -data.educations.each do |education|
         %h3=education[:name]
-        %p=education[:period]
-        =education[:degree]
-        =education[:major]
-      %h2="WORK EXPERIENCE"
+        %p="#{education[:period]}/ #{education[:degree]}"
+        %p=education[:major]
+      %h2.btn="WORK EXPERIENCE"
       -data.exp_companies.each do |exp_company|
         %h3=exp_company[:name]
-        =exp_company[:period]
-        =exp_company[:role]
+        %p="#{exp_company[:period]}/ #{exp_company[:role]}"
         %p=exp_company[:job]
     .edu
-      %h2="ACTIVITIES"
+      %h2.btn="ACTIVITIES"
       -data.activities.each do |activity|
         %h3=activity[:name]
-        =activity[:period]
+        %p=activity[:period]
         %p=activity[:content]
     .pr
-      %h2="SELF PR"
+      %h2.btn="SELF PR"
       %p=data.abouts[0][:self_pr]

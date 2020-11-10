@@ -162,6 +162,14 @@ table {
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
+    .img {
+      display: inline-block;
+      float: right;
+      img {
+        width: 250px;
+        height: 300px;
+      }
+    }
   }
   .item {
   width: 33%;
@@ -169,20 +177,12 @@ table {
   margin-bottom: 20px;
   } 
 
-  .img {
-    width: 40%;
-    display: inline-block;
-    img {
-      width: 120px;
-      height: 160px;
-    }
-  }
-
   .text {
     width: 80%;
     background: rgba(255,255,255,0.65);
     padding: 10px;
     border-radius: 20px;
+    line-height: 1.5;
     margin: auto;
     margin-bottom: 20px;
     text-align: left;
@@ -275,11 +275,14 @@ table {
   align-items: center;
   background: rgba(43,26,16,0.6);
   padding: 30px;
+  h2.btn {
+    width: 75%;
+  }
 }
 
 .containerCareer .contents .pr {
   width: 100%;
-  letter-spacing: 2px;
+  line-height: 1.5;
   background: rgba(255,255,255,0.65);
   border-radius: 20px;
   overflow: hidden;
@@ -294,6 +297,9 @@ table {
   border-radius: 20px;
   float: right;
   text-align: left;
+  h3 {
+    font-size: 24px;
+  }
 }
 
 .containerCareer .contents .wexp {
@@ -372,9 +378,6 @@ table {
     p,li {
     font-size: 12px;
     }
-  .profile, .text {
-    text-align: center;
-  }
   }
   .containerSkill {
     width: 100%;
@@ -405,14 +408,12 @@ table {
     width: 100%;
     display: block;
     float: none;
-    text-align: center;
   }
   
   .containerCareer .contents .wexp {
     width: 100%;
     display: block;
     margin-left: 0;
-    text-align: center;
   }
   .containerContact .contents {
     background-position: 50% 50%;

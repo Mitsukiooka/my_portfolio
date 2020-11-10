@@ -22,6 +22,8 @@
         %h3
           Based at
         %p=data.abouts[0][:live]
+      -# .img
+      -#   =image_tag '/images/profile.jpg'
       %h3
         Hobbies
       -data.abouts[0][:hobbies].each do |hobbie|
