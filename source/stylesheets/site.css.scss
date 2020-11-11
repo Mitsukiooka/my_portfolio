@@ -28,17 +28,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html {
-  height: 100%;
-}
+// html {
+//   height: 100%;
+// }
 
 body {
   line-height: 1;
-  height: 100%;
   font-family: arial;
-  background: url('/images/hello.jpg');
-  background-position: 80% 20%;
-  background-size: cover;
 }
 
 ol, ul {
@@ -93,6 +89,13 @@ table {
 }
 }
 
+.containerIndex, .containerAbout, .containerCareer, .containerSkill, .containerContact {
+  background: url('/images/hello.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 80% 20%;
+  background-repeat: no-repeat;
+}
 
 .contents {
   width: 100%;
@@ -192,13 +195,13 @@ table {
     }
   }
 }
-
-.containerSkill .contents{
+.containerSkill{
   display: flex;
-  background-size: contain;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 20px;
+  .contents{
+    display: flex;
+    flex-direction: row;
   h2 {
     margin: 10px;
   }
@@ -244,7 +247,7 @@ table {
     }
   }
 }
-
+}
 
 
 
