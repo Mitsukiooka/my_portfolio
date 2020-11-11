@@ -9,31 +9,31 @@
       .item
         %h3
           Name
-        %p=data.abouts[0][:name]
+        %p="Mitsuki Ooka"
       .item
         %h3
           Gender
-        %p=data.abouts[0][:gender]
+        %p="Man"
       .item
         %h3
           Born in
-        %p=data.abouts[0][:born]
+        %p="September 1993"
       .item
         %h3
           Based at
-        %p=data.abouts[0][:live]
+        %p="Tokyo Japan"
       -# .img
       -#   =image_tag '/images/profile.jpg'
       %h3
         Hobbies
-      -data.abouts[0][:hobbies].each do |hobbie|
+      -data.abouts[:hobbies].each do |hobbie|
         -hobbie.to_a.each do |k, v|
           %ul
             %li="#{k}: #{v}"
     .text
       %h2="HISTORY"
-      %p=data.abouts[0][:history]
+      %p="　2013年4月、明治大学国際日本学部へ入学。英語の学習に重点を置いた学部のカリキュラムや、周囲の帰国子女、留学生の影響で英語学習に興味を持つ。2014年の8月に1ヶ月間、トロント大学に語学留学し英語の勉強と異文化交流に楽しさを見出す。この期間にTOEFL iBTのスコアを30点伸ばし、2015年には約半年間アメリカのアラバマ大学に交換留学に参加。更なる英語力の強化と海外経験を積んだ。<br>　2017年4月に入社した会社を2018年12月を以て退職。2019年8月から再びカナダはトロントへワーキングホリデービザで渡航。TESOL(英語教授法)のCertificationを獲得し、現地企業でマーケティング業務に携わるも、コロナの影響で在宅謹慎を余儀なくされる。<br>　時間を無駄にしたくない一心から現地でプログラミングスクールに通う事を決意。1ヶ月のRubyとRuby on Rails中心の授業を受けた後に日本へ帰国した現在は、IT企業でインターンをしながら未経験Webエンジニアとして就職活動を行なっている。"
     .text
       %h2="AMBITION"
-      %p=data.abouts[0][:ambition]
+      %p="　私の生涯目標は「日本以外の国に自分の墓を建てる」ことです。学生時代から英語に触れ続け、海外の人たちと交流する事の素晴らしさを知りました。その熱を忘れらずに、カナダでワーキングホリデーし、現地のオフィスで働く経験も出来ましたが、そこでコロナウィルスの影響を受け、自宅待機を余儀なくされました。<br>　「これからの時代、いつでもどこでも働ける能力が必要だ」と強く感じ、プログラミングスクールに通い、Ruby on Railsを１ヶ月勉強しました。講師の方からも評価を頂き、そのままインターンシップのお話にもつながりました。<br>　これからは、英語×プログラミングで自分の生涯目標を達成できるように、「国に関わらず働くことができる」人になりたいです。"
 

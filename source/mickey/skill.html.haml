@@ -25,7 +25,6 @@
         %h2="ENGLISH"
         -data.skills.englishs.each do |english|
           %h3=english[:test]
-          %p=english[:score]
-          %p=english[:date]
+          %p="#{english[:score]} / #{english[:date]}"
         =image_tag '/images/english_skill.jpg'
         

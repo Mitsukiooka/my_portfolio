@@ -9,6 +9,6 @@ gem "middleman-sprockets"
 gem 'pry-rails'
 gem 'bootstrap-sass', :require => false
 gem 'jquery-middleman', :require => false
-gem 'capistrano-middleman', require: false
-gem 'cleanup'
-gem 'middleman-deploy', '~> 1.0'
+# gem 'capistrano-middleman', require: false
+# gem 'cleanup'
+# gem 'middleman-deploy', '~> 1.0'

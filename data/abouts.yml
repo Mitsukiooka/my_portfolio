@@ -1,15 +1,7 @@
--
-  name: Mitsuki Ooka
-  gender: Man
-  born: September 1993
-  live: Tokyo Japan
-  hobbies:
-    - Movies: Marvel Cinematic Universe, Star Wars, Harry Potter series
-    - Music: BTS, BLACKPINK, Other Hip-Hop, R&B, Pop and Rock
-    - Sports: Running, Swimming, Cycling, Scuba Diving and Bouldering
-    - Drink: Beer, Wine and Coffee
-  history: 　2013年4月、明治大学国際日本学部へ入学。英語の学習に重点を置いた学部のカリキュラムや、周囲の帰国子女、留学生の影響で英語学習に興味を持つ。2014年の8月に1ヶ月間、トロント大学に語学留学し英語の勉強と異文化交流に楽しさを見出す。この期間にTOEFL iBTのスコアを30点伸ばし、2015年には約半年間、アメリカのアラバマ大学に交換留学、更なる英語力の強化と海外経験を積んだ。<br>　2017年4月に入社した会社を2018年12月を以て退職。2019年8月から再びカナダはトロントへワーキングホリデービザで渡航。TESOL(英語教授法)のCertificationを獲得し、現地企業でマーケティング業務に携わるも、コロナの影響で在宅謹慎を余儀なくされる。<br> 　時間を無駄にしたくない一心から現地でプログラミングスクールに通う事を決意。1ヶ月のRubyとRuby on Rails中心の授業を受けた後に日本へ帰国した現在は、IT企業でインターンをしながら未経験Webエンジニアとして就職活動を行なっている。
-  ambition: 　私の生涯目標は「日本以外の国に自分の墓を建てる」ことです。学生時代から英語に触れ続け、海外の人たちと交流する事の素晴らしさを知りました。その熱を忘れらずに、カナダでワーキングホリデーし、現地のオフィスで働く経験も出来ましたが、そこでコロナウィルスの影響を受け、自宅待機を余儀なくされました。<br>　「これからの時代、いつでもどこでも働ける能力が必要だ」と強く感じ、プログラミングスクールに通い、Ruby on Railsを１ヶ月勉強しました。講師の方からも評価を頂き、そのままインターンシップのお話にもつながりました。<br>　これからは、英語×プログラミングで自分の生涯目標を達成できるように、「国に関わらず働くことができる」人になりたいです。
-  self_pr: 　私が学生時代から現在まで、誇れる力は二つあります。一つはコミュニケーション能力です。私はアプリの維持管理業務のなかで「相手がどうしたら理解してくれるか」を考えてきました。<br>自分では毎日の業務を通して、理解できるようになった簡単なエラーでも、お客様にとっては全く未知のものになります。そんな時でも、常に自分が入社した頃の事を思い出し身近な具体例を取り入れながら、分かりやすく説明できるよう心掛けてきました。<br>　一方、企画業務では実際に開発を行うベンダー会社に対して、こちらのイメージ通りに動くようにかなり細かい部分まで説明していく必要がありました。相手に合わせて何をどう伝えていくかを試行錯誤した結果、一番伝えたい事を把握し、相手のレベルに合わせて説明するコミュニケーション能力が身につきました。<br>　もう一つは学習意欲です。私は自分の能力を高める事には常に貪欲でいるようにしてきました。学生時代にはとにかく英語をマスターすることに集中しました。週６コマの英語の授業時間以外にも、常に英語に触れる時間を作るように意識しました。<br>　趣味の映画や音楽を利用しながら英語を勉強したり、学部内の留学生たちにも積極的に話かけていましまた。また志同じくする日本人の友人たちとは英語で会話したりと、とにかくインプットとアウトプットを毎日していました。<br>　さらに2回の留学経験を経て、現地の友人から「君の英語は日本のアクセントがない」と褒められるレベルまで達することが出来ました。さらにトロントでのワーキングホリデー中には自分の英語力を社会に還元したいと思い、TESOL（英語教授法）の勉強をしました。<br>　その後のコロナ禍のなかでも時間を無駄にしないようにプログラミングスクールに１ヶ月間通い、Ruby on Railsを学習しました。<br>　必ず自分のものにするようにと勉強を続けた結果、そのプログラミングスクールからインターンシップのお話を頂き、現在ではRuby on railsを使用したプロジェクトの改修業務を行っております。<br>　以上の二つが私の大きな強みであると考えています。
-  intro: Mitsuki Ooka is a web engineer based on Tokyo.<br>My primary language is Ruby. I have been working as a engineer for 3 months!<br>Mitsuki Ooka is also English speaker.<br>My TOEFL iBT score is 88 obtained on July 2019. I had been to Toronto for almost year!
+hobbies:
+  - Movies: Marvel Cinematic Universe, Star Wars, Harry Potter series
+  - Music: BTS, BLACKPINK, Other Hip-Hop, R&B, Pop and Rock
+  - Sports: Running, Swimming, Cycling, Scuba Diving and Bouldering
+  - Drink: Beer, Wine and Coffee
+intro: Mitsuki Ooka is a web engineer based on Tokyo.<br>My primary language is Ruby. I have been working as a engineer for 3 months!<br>Mitsuki Ooka is also English speaker.<br>My TOEFL iBT score is 88 obtained on July 2019. I had been to Toronto for almost year!
 
