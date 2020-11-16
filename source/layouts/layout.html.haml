@@ -7,7 +7,9 @@
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || "Mitsuki Ooka's Portfolio"
     = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
+    %script{:src => "/javascripts/static/js/jquery-3.2.1.min.js"}
+    %script{:src => "/javascripts/static/js/jquery-migrate-3.0.0.min.js"}
+    = javascript_include_tag 'layout'
   %body
     =partial "header" unless current_page.path == "index.html"
     = yield

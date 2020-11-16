@@ -55,14 +55,14 @@ table {
 
 .topHeader {
   height: 50px;
-  background: #1D110C;
+  background: #52331E;
   display: flex;
   align-content: center;
 }
 
 .topFooter {
   height: 50px;
-  background: #1D110C;
+  background: #52331E;
 }
 
 .btn {
@@ -71,10 +71,16 @@ table {
   font-family: arial;
   text-decoration: none;
   margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: inline-block;
   text-align: center;
   padding:8px 0 10px;
   color:rgb(236, 229, 229);
+  background-color: #1D110C;
+}
+
+.js-over {
   background: rgba(154, 93, 58, 0.6);
 }
 
@@ -136,10 +142,6 @@ table {
   .contentsTop {
     display: flex;
     flex-direction: column;
-  }
-  .btn.top{
-    margin: 10px;
-    background-color: #1D110C;
   }
 }
 
