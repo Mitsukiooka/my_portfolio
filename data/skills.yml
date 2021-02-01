@@ -5,6 +5,7 @@ languages:
 frameworks:
   - Ruby On Rails
   - jQuery
+  - React Native
 tools: 
   - Git Hub
   - Slack

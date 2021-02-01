@@ -10,7 +10,7 @@
           %ul
             %li=link_to "#{work[:title]}", work[:url], class: 'btn'
             %p=work[:description]
-        =image_tag '/images/programming_skill.jpg'
+        =image_tag '/images/movielog.png'
     .item2
       .text
         %h2="WEB LANGUAGE"
@@ -26,5 +26,5 @@
         -data.skills.englishs.each do |english|
           %h3=english[:test]
           %p="#{english[:score]} / #{english[:date]}"
-        =image_tag '/images/english_skill.jpg'
+        
         
