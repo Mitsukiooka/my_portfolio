@@ -1,9 +1,11 @@
 languages:
   - Ruby
+  - PHP
   - Javascript
   - CSS
 frameworks:
   - Ruby On Rails
+  - Laravel
   - jQuery
   - React Native
 tools: 
