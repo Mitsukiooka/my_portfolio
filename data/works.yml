@@ -1,11 +1,11 @@
 -
+  title: Wine Log
+  url: http://18.179.180.224/
+  description: 採点機能付きワイン日記Webアプリ。PHP, Laravelで作成。dockerで環境構築。AWSでデプロイ。
+-
   title: Movielog
   url: https://movielog-mickey.herokuapp.com/
-  description: レビュー投稿機能付き映画投稿サイト。見た映画を記録し、ログイン機能を使用すれば友人たちとも共有可能に。
--
-  title: Wine Log
-  url: https://movielog-mickey.herokuapp.com/
-  description: Coming soon...
+  description: レビュー投稿機能付き映画投稿サイト。Ruby, Ruby on Railsで作成。Herokuでデプロイ。
 -
   title: English Training
   url: https://movielog-mickey.herokuapp.com/
