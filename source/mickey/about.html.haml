@@ -36,4 +36,78 @@
     .text
       %h2="AMBITION"
       %p="　私の生涯目標は「日本以外の国に自分の墓を建てる」ことです。学生時代から英語に触れ続け、海外の人たちと交流する事の素晴らしさを知りました。その熱を忘れらずに、カナダでワーキングホリデーし、現地のオフィスで働く経験も出来ましたが、そこでコロナウィルスの影響を受け、自宅待機を余儀なくされました。<br>　「これからの時代、いつでもどこでも働ける能力が必要だ」と強く感じ、プログラミングスクールに通い、Ruby on Railsを１ヶ月勉強しました。講師の方からも評価を頂き、そのままインターンシップのお話にもつながりました。<br>　これからは、英語×プログラミングで自分の生涯目標を達成できるように、「国に関わらず働くことができる」人になりたいです。"
+.containerSkill
+  .header
+    %h1
+      SKILLS
+  .contents
+    .item1
+      .text
+        %h2="PORTFOLIO"
+        -data.works.each do |work|
+          %ul
+            %li=link_to "#{work[:title]}", work[:url], class: 'btn'
+            %p=work[:description]
+        =image_tag '/images/movielog.png'
+    .item2
+      .text
+        %h2="WEB LANGUAGE"
+        -data.skills.languages.each do |language|
+          %p=language
+        %h2="FRAMEWORK"
+        -data.skills.frameworks.each do |framework|
+          %p=framework
+        %h2="TOOLS"
+        -data.skills.tools.each do |tool|
+          %p=tool
+        %h2="ENGLISH"
+        -data.skills.englishs.each do |english|
+          %h3=english[:test]
+          %p="#{english[:score]} / #{english[:date]}"
+.containerCareer
+  .header
+    %h1
+      CAREER
+  .contents
+    .wexp
+      %h2.btn="EDUCATION"
+      -data.educations.each do |education|
+        %h3=education[:name]
+        %p="#{education[:period]}/ #{education[:degree]}"
+        %p=education[:major]
+      %h2.btn="WORK EXPERIENCE"
+      -data.exp_companies.each do |exp_company|
+        %h3=exp_company[:name]
+        %p="#{exp_company[:period]}/ #{exp_company[:role]}"
+        %p=exp_company[:job]
+    .edu
+      %h2.btn="ACTIVITIES"
+      -data.activities.each do |activity|
+        %h3=activity[:name]
+        %p=activity[:period]
+        %p=activity[:content]
+    .pr
+      %h2.btn="SELF PR"
+      %p="　私が学生時代から現在まで、誇れる力は二つあります。一つはコミュニケーション能力です。私はアプリの維持管理業務のなかで「相手がどうしたら理解してくれるか」を考えてきました。<br>自分では毎日の業務を通して、理解できるようになった簡単なエラーでも、お客様にとっては全く未知のものになります。そんな時でも、常に自分が入社した頃の事を思い出し身近な具体例を取り入れながら、分かりやすく説明できるよう心掛けてきました。<br>　一方、企画業務では実際に開発を行うベンダー会社に対して、こちらのイメージ通りに動くようにかなり細かい部分まで説明していく必要がありました。相手に合わせて何をどう伝えていくかを試行錯誤した結果、一番伝えたい事を把握し、相手のレベルに合わせて説明するコミュニケーション能力が身につきました。<br>　もう一つは学習意欲です。私は自分の能力を高める事には常に貪欲でいるようにしてきました。学生時代にはとにかく英語をマスターすることに集中しました。週６コマの英語の授業時間以外にも、常に英語に触れる時間を作るように意識しました。<br>　趣味の映画や音楽を利用しながら英語を勉強したり、学部内の留学生たちにも積極的に話かけていましまた。また志同じくする日本人の友人たちとは英語で会話したりと、とにかくインプットとアウトプットを毎日していました。<br>　さらに2回の留学経験を経て、現地の友人から「君の英語は日本のアクセントがない」と褒められるレベルまで達することが出来ました。さらにトロントでのワーキングホリデー中には自分の英語力を社会に還元したいと思い、TESOL（英語教授法）の勉強をしました。<br>　その後のコロナ禍のなかでも時間を無駄にしないようにプログラミングスクールに１ヶ月間通い、Ruby on Railsを学習しました。<br>　必ず自分のものにするようにと勉強を続けた結果、そのプログラミングスクールからインターンシップのお話を頂き、現在ではRuby on railsを使用したプロジェクトの改修業務を行っております。<br>　以上の二つが私の大きな強みであると考えています。"
+.containerContact
+  .header
+    %h1
+      CONTACT
+  .contents
+    .contact
+      %p="EMAIL: mooka0907@gmail.com"
+      %p="PHONE: 090-5813-8809"
+      %ul
+        %li
+          %a{:href => "https://github.com/Mitsukiooka", :target => "_blank"}
+            %img{:alt => "Git Hub", :src => "/images/GitHub.png"}/
+        %li
+          %a{:href => "https://www.facebook.com/mitsuki.ooka", :target => "_blank"}
+            %img{:alt => "Facebook", :src => "/images/Facebook.png"}/
+        %li
+          %a{:href => "https://twitter.com/Mickey249921811", :rel => "external", :target => "_blank"}
+            %img{:alt => "Twitter", :src => "/images/Twitter.png"}/
+        %li
+          %a{:href => "https://www.instagram.com/mickeyminjuuune/?hl=ja", :target => "_blank"}
+            %img{:alt => "Instagram", :src => "/images/instagram.png"}/
 

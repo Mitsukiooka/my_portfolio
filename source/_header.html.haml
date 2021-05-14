@@ -1,6 +1,20 @@
-.topHeader
-  =link_to "HOME", '/index.html', class: 'btn'
-  =link_to "ABOUT", '/mickey/about.html', class: 'btn'
-  =link_to "SKILLS", '/mickey/skill.html', class: 'btn'
-  =link_to "CAREER", '/mickey/career.html', class: 'btn'
-  =link_to "CONTACT", '/mickey/contact.html', class: 'btn'
+-# .topHeader
+-#   =link_to "HOME", '/index.html'
+-#   =link_to "ABOUT", '/mickey/about.html'
+-#   =link_to "SKILLS", '/mickey/skill.html'
+-#   =link_to "CAREER", '/mickey/career.html'
+-#   =link_to "CONTACT", '/mickey/contact.html'
+%header.page-header{role: 'navigation'}
+  .inner
+    %h1.site-logo
+      =link_to "Mitsuki Ooka", '/index.html'
+    %nav.primary-nav
+      %ul
+        %li
+          =link_to "ABOUT", '/mickey/about.html'
+        %li
+          =link_to "SKILLS", '/mickey/skill.html'
+        %li
+          =link_to "CAREER", '/mickey/career.html'
+        %li
+          =link_to "CONTACT", '/mickey/contact.html'
