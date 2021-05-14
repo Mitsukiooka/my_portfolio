@@ -2,7 +2,6 @@ languages:
   - Ruby
   - PHP
   - Javascript
-  - CSS
 frameworks:
   - Ruby On Rails
   - Laravel
@@ -10,6 +9,8 @@ frameworks:
   - React Native
 tools: 
   - Git Hub
+  - Docker
+  - SQL
   - Slack
 englishs:
   - test: TOEIC
