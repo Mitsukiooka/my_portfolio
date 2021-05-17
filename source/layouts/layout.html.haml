@@ -11,6 +11,5 @@
     %script{:src => "/javascripts/static/js/jquery-migrate-3.0.0.min.js"}
     = javascript_include_tag 'layout'
   %body
-    =partial "header" unless current_page.path == "index.html"
     = yield
     =partial "footer" unless current_page.path == "index.html"
