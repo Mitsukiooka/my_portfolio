@@ -94,8 +94,8 @@ $(function(){
     $tabList.on('click', 'a', function(event) {
       event.preventDefault();
       var $this = $(this);
-      $tabPanels.hide();
-      $($this.attr('href')).show();
+      $tabPanels.hide('fast');
+      $($this.attr('href')).show('fast');
     });
 
     $tabAnchors.eq(0).trigger('click');
