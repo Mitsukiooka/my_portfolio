@@ -1,12 +1,12 @@
 languages:
   - Ruby
-  - PHP
   - Javascript
+  - PHP
 frameworks:
   - Ruby On Rails
-  - Laravel
   - jQuery
-  - React Native
+  - React
+  - Laravel
 tools: 
   - Git Hub
   - Docker
